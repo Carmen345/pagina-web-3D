@@ -16,7 +16,8 @@
     <script>
         // Crear la escena
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color(0x87CEEB); // Azul cielo
+        scene.background = new THREE.Color(0xffa500); // Naranja arriba
+        scene.fog = new THREE.FogExp2(0x87CEEB, 0.1); // Azul abajo
 
         // Cámara
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
